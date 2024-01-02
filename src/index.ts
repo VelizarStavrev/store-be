@@ -17,6 +17,7 @@ app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, authorization');
   next();
 });
+app.use(express.json());
 app.use(routes);
 
 app.listen(config.port, () => {
