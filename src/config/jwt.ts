@@ -1,5 +1,5 @@
 const jwtConfig = {
-    key: 'STORE',
+  key: 'STORE',
 };
 
-module.exports = jwtConfig;
+export default jwtConfig;

@@ -1,37 +1,37 @@
 export interface Login {
-    username: string,
-    password: string
+  username: string,
+  password: string
 }
 
 export interface Register {
-    email: string,
-    username: string,
-    password: string
+  email: string,
+  username: string,
+  password: string
 }
 
 export interface RegisterData {
-    email: string,
-    username: string,
-    password: string,
-    created: number,
-    role: number
+  email: string,
+  username: string,
+  password: string,
+  created: number,
+  role: number
 }
 
 export interface Response {
-    status: boolean;
-    message: string;
+  status: boolean;
+  message: string;
 }
 
 export interface ResponseRegister extends Response {
-    type?: string;
+  type?: string;
 }
 
 export interface ResponseLogin extends Response {
-    token?: string;
+  token?: string;
 }
 export interface ResponseData extends Response {
-    data?: {
-        username: string;
-        email: string;
-    }
+  data?: {
+    username: string;
+    email: string;
+  }
 }

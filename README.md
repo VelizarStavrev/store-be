@@ -15,8 +15,9 @@
 - Added jsonwebtoken types to get all of the jsonwebtoken library types
 
 ## Available scripts
-- `npm start` - starts the development server (with ts-node and nodemon)
-- `npm build` - builds all of the TS files into one JS file in the folder dist
+- `npm start` - Starts the development server (with ts-node and nodemon)
+- `npm build` - Builds all of the TS files into one JS file in the folder dist
+- `npm run lint` - Executes the linting rules for the entire project
 
 ## Available routes
 ### User
@@ -33,5 +34,5 @@
 - Add a mailing service and implement it for user contacts and other notifications
 - Create API documentation - Route name, method, expected data
 - Add a testing library and write tests
-- Add DB saved logging
+- Add a logging service, remove all console logs and add a log rule to eslint
 - Move the config files to a more secure place

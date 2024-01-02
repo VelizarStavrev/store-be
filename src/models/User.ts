@@ -1,11 +1,22 @@
+// Libraries
 import mongoose from 'mongoose';
 
+interface IUser {
+  email: string,
+  username: string,
+  password: string,
+  created: number,
+  role: number,
+}
+
 const userSchema = new mongoose.Schema({
-    email: String,
-    username: String,
-    password: String,
-    created: Number,
-    role: Number
+  email: String,
+  username: String,
+  password: String,
+  created: Number,
+  role: Number,
 }, { optimisticConcurrency: true });
 
-module.exports = mongoose.model('User', userSchema);
+const User = mongoose.model<IUser>('User', userSchema);
+
+export default User;

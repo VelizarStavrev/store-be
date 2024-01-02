@@ -1,0 +1,80 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "script"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "@stylistic"
+    ],
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-var-requires": 0,
+        "no-unreachable": 2,
+        "capitalized-comments": [
+            "error",
+            "always"
+        ],
+        "no-alert": [
+            "error"
+        ],
+        "@stylistic/max-len": [
+            "warn",
+            {
+                "code": 120
+            }
+        ],
+        "@stylistic/arrow-parens": [
+            "error",
+            "always"
+        ],
+        "@stylistic/arrow-spacing": [
+            "error"
+        ],
+        "@stylistic/brace-style": [
+            "error"
+        ],
+        "@stylistic/comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "@stylistic/comma-spacing": "error",
+        "@stylistic/eol-last": [
+            "error",
+            "always"
+        ],
+        "@stylistic/function-call-spacing": "error",
+        "@stylistic/indent": [
+            "error",
+            2
+        ],
+        "@stylistic/quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "@stylistic/spaced-comment": "error",
+        "@stylistic/space-before-function-paren": [
+            "error",
+            "never"
+        ]
+    }
+}
