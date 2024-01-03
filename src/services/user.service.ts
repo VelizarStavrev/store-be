@@ -12,7 +12,7 @@ import {
   ResponseData,
   ResponseLogin,
   ResponseRegister,
-} from '../types/user-types';
+} from '../types/user';
 
 // Configs
 import jwtConfig from '../config/jwt';

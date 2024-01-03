@@ -15,7 +15,7 @@ import {
 } from '../services/user.service';
 
 // Types
-import { Login, Register } from '../types/user-types';
+import { Login, Register } from '../types/user';
 
 const router = express.Router();
 
