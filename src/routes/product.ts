@@ -32,7 +32,7 @@ router.get('/:productId', (req, res) => {
 
 router.post('/create', tokenAuth, (req, res) => {
   const productData: ProductData = {
-    imageURL: req.body.imageURL,
+    image_url: req.body.image_url,
     name: req.body.name,
     description: req.body.description,
     original_price: req.body.original_price,

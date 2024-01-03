@@ -22,7 +22,7 @@ export async function productEdit(productId: string, userId: string, productData
     return { status: false, message: 'The product does not exist!' };
   }
 
-  product.imageURL = productData.imageURL;
+  product.image_url = productData.image_url;
   product.name = productData.name;
   product.description = productData.description;
   product.original_price = productData.original_price;

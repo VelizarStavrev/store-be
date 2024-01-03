@@ -1,5 +1,5 @@
 export interface Product {
-  imageURL: string | null;
+  image_url: string | null;
   name: string;
   description: string;
   original_price: number | null;

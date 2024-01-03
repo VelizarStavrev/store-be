@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 
 interface IProduct {
-  imageURL: string | null;
+  image_url: string | null;
   name: string;
   description: string;
   original_price: number | null;
@@ -10,7 +10,7 @@ interface IProduct {
 }
 
 const productSchema = new mongoose.Schema({
-  imageURL: String,
+  image_url: String,
   name: {
     type: String,
     required: true,
