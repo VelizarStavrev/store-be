@@ -13,6 +13,8 @@
 - Added bcrypt types to get all of the bcrypt library types
 - Added jsonwebtoken for token creation and verification 
 - Added jsonwebtoken types to get all of the jsonwebtoken library types
+- Added eslint for a more consistent project and a better development experience
+- Added eslint stylistic for the deprecated rules that were moved to the external library
 
 ## Available scripts
 - `npm start` - Starts the development server (with ts-node and nodemon)
@@ -30,9 +32,19 @@
 | /user/change/data     | GET    | Change the user profile data  |
 | /user/change/password | GET    | Change the user profile data  |
 
+### Shop - Products
+| Route                 | Method | Purpose                       |
+| :-------------------- | :----- | :---------------------------- |
+| /products             | GET    | Get all products              |
+| /product/create       | POST   | Create a product              |
+| /product/edit/:id     | POST   | Edit a specific product by id |
+| /product/delete/:id   | POST   | Delete a product by id        |
+| /product/:id          | GET    | Get a specific product by id  |
+
 ## TO DO
 - Add a mailing service and implement it for user contacts and other notifications
 - Create API documentation - Route name, method, expected data
 - Add a testing library and write tests
 - Add a logging service, remove all console logs and add a log rule to eslint
 - Move the config files to a more secure place
+- Implement admins to be able to edit and delete everything, not only specific creator IDs
